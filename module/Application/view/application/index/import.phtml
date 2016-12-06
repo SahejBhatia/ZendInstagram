@@ -1,0 +1,19 @@
+<?php
+
+$decoded = json_decode($this->data);
+
+$decoded = json_decode($data);
+foreach ($decoded as $name => $value) {
+    echo $name . ':';
+    foreach ($value as $entry) {
+        echo '  ' . $entry->url;
+    }
+}
+
+
+echo "vardumping : ";
+var_dump($decoded);
+
+
+
+?>
